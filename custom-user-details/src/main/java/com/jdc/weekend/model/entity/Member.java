@@ -19,10 +19,17 @@ public class Member extends AbstractEntity{
 	
 	@Column(nullable = false,unique = true)
 	private String email;
+	
 	@Column(nullable = false)
 	private String name;
+	
+	private String phone;
+	private String profileImage;
+	private String greeting;
+	
 	@Column(nullable = false)
 	private Role role;
+	
 	@Column(nullable = false)
 	private String password;
 	

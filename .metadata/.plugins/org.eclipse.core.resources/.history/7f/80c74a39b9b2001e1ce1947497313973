@@ -1,0 +1,9 @@
+package com.jdc.weekend.model.output;
+
+public record ProfileInfo(
+		String name,
+		String phone,
+		String image,
+		String greeting) {
+		
+}

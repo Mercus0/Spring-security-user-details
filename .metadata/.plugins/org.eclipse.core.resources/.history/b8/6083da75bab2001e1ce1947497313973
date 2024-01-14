@@ -1,0 +1,19 @@
+package com.jdc.weekend.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("member/post/edit")
+public class MemberPostEditController {
+	
+	String create() {
+		return "post-list";
+		
+	}
+	
+	String edit() {
+		return "post-details";
+	}
+	
+}

@@ -1,0 +1,25 @@
+package com.jdc.weekend.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("member/review")
+public class MemberReviewController {
+	
+	@GetMapping
+	String search() {
+		return "review-list";
+	}
+	
+	@GetMapping
+	String create() {
+		return "review-edit";
+	}
+	
+	String save() {
+		return "redirect:/public/posts/%s".formatted(0);
+	}
+}
+

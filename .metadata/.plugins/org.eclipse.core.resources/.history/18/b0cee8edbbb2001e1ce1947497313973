@@ -1,0 +1,15 @@
+package com.jdc.weekend.controller.advice;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ModelAttribute;
+
+@ControllerAdvice
+public class AppControllerAdvice {
+	@ModelAttribute(name="Categories")
+	List<CategoryInfo> categories(){
+		return null;
+	}
+
+}

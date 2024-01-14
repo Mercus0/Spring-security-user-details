@@ -16,5 +16,17 @@ public class ReviewPk implements Serializable{
 	private int postId;
 	@Column(name="review_id",nullable = false)
 	private int reviewerId;
+	
+	public String getCode() {
+		return "%04d-%06d".formatted(reviewerId,postId);
+	}
+	
+	public static ReviewPk from(String code) {
+		var array=code.split("-");
+		var pk=new ReviewPk();
+		pk.setReviewerId(Integer.parseInt(array[0]));
+		pk.setPostId(Integer.parseInt(array[1]));
+		return pk;
+	}
 
 }

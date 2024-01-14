@@ -1,0 +1,18 @@
+package com.jdc.weekend.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("")
+public class MemberPostController {
+	
+	String search() {
+		return "post-list";
+	}
+	
+	String findById(int id) {
+		return "post-details";
+	}
+	
+}

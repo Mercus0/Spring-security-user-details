@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="CustomUserDetailsApplicationTests" project="custom-user-details" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.jdc.weekend.CustomUserDetailsApplicationTests" time="0.684" displayname="CustomUserDetailsApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.jdc.weekend.CustomUserDetailsApplicationTests]">
-    <testcase name="contextLoads" classname="com.jdc.weekend.CustomUserDetailsApplicationTests" time="0.684" displayname="contextLoads()" uniqueid="[engine:junit-jupiter]/[class:com.jdc.weekend.CustomUserDetailsApplicationTests]/[method:contextLoads()]"/>
-  </testsuite>
-</testrun>

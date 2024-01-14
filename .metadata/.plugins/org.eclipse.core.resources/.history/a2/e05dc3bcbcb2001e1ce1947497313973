@@ -1,0 +1,20 @@
+package com.jdc.weekend.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.jdc.weekend.model.output.CategoryInfo;
+
+@Controller
+@RequestMapping("admin/category")
+public class AdminCategoryController {
+	
+	String search(String keyword) {
+		return "category-list";
+	}
+	
+	String save(CategoryInfo form,BindingResult result) {
+		return "redirect:/admin/category";
+	}
+}
