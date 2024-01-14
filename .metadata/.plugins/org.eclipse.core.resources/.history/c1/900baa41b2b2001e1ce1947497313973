@@ -1,0 +1,24 @@
+package com.jdc.weekend.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("member/home")
+public class MemberHomeController {
+	String home() {
+		return "member-home";
+	}
+	
+	String profile() {
+		return "member-profile";
+	}
+	
+	String editProfile() {
+		return "member-profile-edit";
+	}
+	
+	String saveProfile() {
+		return "redirect:/member/home/profile";
+	}
+}

@@ -1,0 +1,5 @@
+package com.jdc.config;
+
+public class MvcConfig {
+
+}

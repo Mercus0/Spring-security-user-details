@@ -1,0 +1,28 @@
+package com.jdc.weekend.model.entity;
+
+import java.math.BigDecimal;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.EmbeddedId;
+import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.ManyToOne;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
+@Data
+@Entity
+@EqualsAndHashCode(callSuper = false)
+public class Review {
+	@EmbeddedId
+	private ReviewPk id;
+	
+	@ManyToOne(optional = false,fetch = FetchType.LAZY)
+	private Post post;
+	@ManyToOne(optional = false,fetch = FetchType.LAZY)
+	private Member reviewer;
+	
+	@Column(nullable = false)
+	private BigDecimal rate;
+	private String message;
+}

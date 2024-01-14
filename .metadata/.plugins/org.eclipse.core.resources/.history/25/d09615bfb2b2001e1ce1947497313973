@@ -1,0 +1,44 @@
+package com.jdc.weekend.controller;
+
+import java.util.Optional;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+@RequestMapping("member/home")
+public class MemberHomeController {
+	
+	@GetMapping
+	String home(
+			@RequestParam Optional<String>  keyword,
+			@RequestParam(required = false) int page,
+			@RequestParam(required = false) int size,
+			ModelMap model) {
+		return "member-home";
+	}
+	
+	@GetMapping("profile")
+	String profile() {
+		return "member-profile";
+	}
+	
+	@GetMapping("profile/edit")
+	String editProfile() {
+		return "member-profile-edit";
+	}
+	
+	@PostMapping("profile/edit")
+	String saveProfile() {
+		return "redirect:/member/home/profile";
+	}
+	
+	@PostMapping("profile/change-password")
+	String changePassword() {
+		return "redirect:/member/home/profile";
+	}
+}

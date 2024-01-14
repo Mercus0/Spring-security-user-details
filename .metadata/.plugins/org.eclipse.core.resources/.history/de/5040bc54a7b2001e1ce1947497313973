@@ -1,0 +1,5 @@
+package com.jdc.weekend.model;
+
+public class BaseRepository {
+
+}

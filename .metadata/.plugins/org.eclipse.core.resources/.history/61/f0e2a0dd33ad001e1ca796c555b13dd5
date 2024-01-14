@@ -1,0 +1,5 @@
+package com.jdc.weekend.config;
+
+public class AppMvcConfig {
+
+}

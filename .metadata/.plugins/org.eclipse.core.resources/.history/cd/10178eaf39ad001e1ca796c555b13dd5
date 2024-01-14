@@ -1,0 +1,6 @@
+package com.jdc.config;
+
+
+public class SecurityConfig {
+	
+}
